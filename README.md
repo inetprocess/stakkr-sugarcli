@@ -1,4 +1,4 @@
-# Sugarcli Plugins for inetprocess/docker-lamp
+# Sugarcli Plugin for inetprocess/docker-lamp
 Plugin made by Inet Process to run sugarcli commands
 
 
