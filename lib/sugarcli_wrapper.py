@@ -8,9 +8,9 @@ def download_sugarcli(install_path: str):
     from urllib.request import urlretrieve
     # download sugarcli if it's not the case
     if os.path.isfile(install_path) is False:
+        print('sugarcli has not been downloaded yet, downloading ...')
         urlretrieve('http://apt.inetprocess.fr/pub/sugarcli.phar', install_path)
         os.chmod(install_path, stat.S_IRWXU)
-        print('sugarcli has not been downloaded yet, downloading ...')
 
 
 def run(vm_name: str, relative_dir: str, sugarcli_cmd: str):

@@ -12,6 +12,6 @@ Use `lamp sugarcli` to use sugarcli
 
 Example to get a list of users:
 ```bash
-cd /home/user/docker/www/sugarproject
-/home/user/docker/lamp sugarcli user:list --path .
+cd www/sugarproject
+lamp sugarcli user:list --path .
 ```
