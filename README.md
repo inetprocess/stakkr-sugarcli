@@ -1,17 +1,17 @@
-# Sugarcli Plugin for inetprocess/docker-lamp
+# Sugarcli Plugin for inetprocess/marina
 Plugin made by Inet Process to run sugarcli commands
 
 __WARNING: The plugin directory must be named `sugarcli`__ (complete path: plugins/sugarcli)
 
 # Installation
-Clone the repository in the plugins/ directory of your docker-lamp
+Clone the repository in the plugins/ directory of your marina
 
 
 # sugarcli commands
-Use `lamp sugarcli` to use sugarcli
+Use `marina sugarcli` to use sugarcli
 
 Example to get a list of users:
 ```bash
 cd www/sugarproject
-lamp sugarcli user:list --path .
+marina sugarcli user:list --path .
 ```

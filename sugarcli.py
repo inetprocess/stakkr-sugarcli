@@ -9,10 +9,10 @@ from plugins.sugarcli.lib import sugarcli_wrapper
 def sugarcli(ctx, run_args: tuple):
     run_args = ' '.join(run_args)
 
-    lamp = ctx.obj['LAMP']
-    lamp.check_vms_are_running()
+    marina = ctx.obj['MARINA']
+    marina.check_vms_are_running()
 
-    if lamp.current_dir.find(lamp.lamp_base_dir) != 0:
-        raise Exception('You are not in a sub-directory of your lamp instance')
+    if marina.current_dir.find(marina.marina_base_dir) != 0:
+        raise Exception('You are not in a sub-directory of your marina instance')
 
-    sugarcli_wrapper.run(lamp.get_vm_item('php', 'name'), lamp.current_dir_relative, run_args)
+    sugarcli_wrapper.run(marina.get_vm_item('php', 'name'), marina.current_dir_relative, run_args)
