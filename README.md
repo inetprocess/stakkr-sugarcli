@@ -1,4 +1,4 @@
-# Sugarcli Plugin for inetprocess/marina
+# Sugarcli Plugin for edyan/marina
 Plugin made by Inet Process to run sugarcli commands
 
 __WARNING: The plugin directory must be named `sugarcli`__ (complete path: plugins/sugarcli)
