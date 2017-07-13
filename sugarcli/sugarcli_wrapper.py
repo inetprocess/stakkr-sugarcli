@@ -3,7 +3,7 @@ import stat
 import sys
 import subprocess
 
-from marina.utils import get_venv_basedir
+from marina.package_utils import get_venv_basedir
 
 
 def download_sugarcli(install_path: str):
