@@ -1,6 +1,6 @@
 import click
 
-from plugins.sugarcli.lib import sugarcli_wrapper
+from sugarcli import sugarcli_wrapper
 
 
 @click.command(help="Run a sugarcli command", context_settings=dict(ignore_unknown_options=True))
