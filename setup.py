@@ -1,11 +1,11 @@
 from setuptools import setup
 
 setup(
-    name='MarinaSugarCLI',
-    version='1.0',
+    name='StakkrSugarCLI',
+    version='3.0',
     packages=['sugarcli'],
     entry_points='''
-        [marina.plugins]
+        [stakkr.plugins]
         sugarcli=sugarcli.core:sugarcli
     '''
 )
