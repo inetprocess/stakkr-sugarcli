@@ -6,6 +6,12 @@ __WARNING: The plugin directory must be named `sugarcli`__ (complete path: plugi
 # Installation
 Clone the repository in the plugins/ directory of your stakkr
 
+```bash
+$ cd plugins
+$ git clone https://github.com/inetprocess/stakkr-sugarcli.git sugarcli
+$ stakkr refresh-plugins
+```
+
 # sugarcli commands
 Use `stakkr sugarcli` to use sugarcli. On the first run, sugarcli is downloaded.
 
