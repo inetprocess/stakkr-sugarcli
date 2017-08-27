@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='StakkrSugarCLI',
-    version='3.2',
+    version='3.5',
     packages=['sugarcli'],
     entry_points='''
         [stakkr.plugins]

@@ -11,9 +11,9 @@ def sugarcli(ctx, run_args: tuple):
     run_args = ' '.join(run_args)
 
     stakkr = ctx.obj['STAKKR']
-    docker.check_cts_are_running(stakkr.project_name, stakkr.config_file)
+    docker.check_cts_are_running(stakkr.project_name)
 
-    if stakkr.current_dir.find(stakkr.stakkr_base_dir) != 0:
+    if stakkr.cwd_abs.find(stakkr.stakkr_base_dir) != 0:
         raise Exception('You are not in a sub-directory of your stakkr instance')
 
-    sugarcli_wrapper.run(docker.get_ct_item('php', 'name'), stakkr.current_dir_relative, run_args)
+    sugarcli_wrapper.run(docker.get_ct_item('php', 'name'), stakkr.cwd_relative, run_args)
